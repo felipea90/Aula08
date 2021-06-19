@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Desafio06 
 {
@@ -12,7 +13,36 @@ Supondo um jogo onde os jogadores têm 5 cartas na mão, crie funções para verific
 */
 	public static void main(String[] args) 
 	{
-		
+		Scanner leitor = new Scanner(System.in);
+
+		String cartas[] = new String[5];
+
+		System.out.println("POKER\n");
+
+		System.out.println("Verificando a mão do jogador.\n");
+
+		System.out.println("Informe suas cartas:\n");
+
+		for (int i = 0; i < cartas.length; i++)
+		{
+			System.out.println("Carta" + (i+1));
+			cartas[i] = leitor.next();
+		}
+
+		if (Funcoes.par(cartas))
+		{
+			System.out.println("Você possui um PAR.");			
+		}
+			else if (Funcoes.trinca(cartas))
+		{
+			System.out.println("Você possui uma TRINCA.");
+		}
+		else if (Funcoes.quadra(cartas))
+		{
+			System.out.println("Você possui uma QUADRA.");
+		}
+
+		leitor.close();
 
 	}
 

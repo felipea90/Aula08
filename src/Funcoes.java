@@ -170,4 +170,69 @@ public class Funcoes
 		System.out.println("3 - Sair");
 	}
 
+	public static boolean par(String cartas[]) 
+	{
+		int qtdeIguais=0;
+
+		for(int i=0; i<cartas.length-1;i++) 
+		{
+			for(int i2=i+1; i2<cartas.length;i2++) 
+			{
+				if (cartas[i].equals(cartas[i2])) 
+				{
+					qtdeIguais = qtdeIguais + 1;
+				}
+			}
+		}
+		
+		if (qtdeIguais == 2) 
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public static boolean trinca(String cartas[]) 
+	{
+		int qtdeIguais=0;
+
+		for(int i=0; i<cartas.length-1;i++) 
+		{
+			for(int i2=i+1; i2<cartas.length;i2++) 
+			{
+				if (cartas[i].equals(cartas[i2])) 
+				{
+					qtdeIguais = qtdeIguais + 1;
+				}
+			}
+		}
+		
+		if (qtdeIguais == 3) 
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public static boolean quadra(String cartas[]) 
+	{
+		int qtdeIguais=0;
+
+		for(int i=0; i<cartas.length-1;i++) 
+		{
+			for(int i2=i+1; i2<cartas.length;i2++) 
+			{
+				if (cartas[i].equals(cartas[i2])) 
+				{
+					qtdeIguais = qtdeIguais + 1;
+				}
+			}
+		}
+		
+		if (qtdeIguais == 4) 
+		{
+			return true;
+		}
+		return false;
+	}
 }

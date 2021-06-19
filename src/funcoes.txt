@@ -1,0 +1,12 @@
+FUNÇÕES COM ARGUMENTO
+- Quando a função depende de um valor anterior
+
+FUNÇÕES SEM ARGUMENTO
+- Quando a função NÃO DEPENDE de um valor anterior
+
+FUNÇÃO SEM RETURN
+- Quando a função realiza algo que NÃO GERA um valor de resultado retornável
+
+FUNÇÃO COM RETURN
+- Quando a função gera um valor que será usado fora dela imediatamente após sua chamada
+
