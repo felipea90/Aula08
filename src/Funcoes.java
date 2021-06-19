@@ -1,5 +1,53 @@
 public class Funcoes {
 
+	public static void triangulo(double lado1, double lado2, double lado3)
+	{
+		double soma1, soma2, soma3;
+
+		if (lado1 != 0 && lado2 != 0 && lado3 != 0)
+		{
+			soma1 = lado1 + lado2;
+			soma2 = lado1 + lado3;
+			soma3 = lado2 + lado3;
+			
+			if(soma1 < lado3 || soma2 < lado2 || soma3 < lado1)
+			{
+				System.out.println("A soma de dois lados não pode ser menor do que o terceiro.\n");
+				System.out.println("Este triângulo não existe.");
+			}
+			else
+			{
+				
+				if (lado1 == lado2 && lado1 == lado3)
+				{
+					System.out.println("Este é um Triângulo Equiltero");
+					System.out.println("Lado1 = " + lado1);
+					System.out.println("Lado2 = " + lado2);
+					System.out.println("Lado3 = " + lado3);
+				}
+				else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3)
+				{
+					System.out.println("Este é um Triângulo Isósceles");
+					System.out.println("Lado1 = " + lado1);
+					System.out.println("Lado2 = " + lado2);
+					System.out.println("Lado3 = " + lado3);
+				}
+				else
+				{
+					System.out.println("Este é um Triângulo Escaleno");
+					System.out.println("Lado1 = " + lado1);
+					System.out.println("Lado2 = " + lado2);
+					System.out.println("Lado3 = " + lado3);
+				}
+			}
+		}
+		else
+		{
+			System.out.println("O lados não podem ser Zero.\n");
+			System.out.println("Este triângulo não existe.");
+		}
+	}
+
 	public static boolean login(String usuario, String senha) 
 	{
 		if (usuario.equalsIgnoreCase("comprador") && senha.equals("123"))
