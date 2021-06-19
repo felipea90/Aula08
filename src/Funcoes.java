@@ -1,5 +1,50 @@
+import javax.lang.model.util.ElementScanner6;
+
 public class Funcoes 
 {
+	public static boolean temperatura(double valor1)
+	{
+		if (valor1 <= 37)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	public static boolean familia(int valor1)
+	{
+		if (valor1 <= 2)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	public static boolean mascara(int valor1)
+	{
+		{
+			if (valor1 == 1)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+	}
+
+	public static boolean agregadora(double temp, int fam, int masc)
+	{
+		return temperatura(temp) && familia(fam) && mascara(masc);
+	}
+
 	public static void salarioProfessor(int valor1, Double valor2)
 	{
 		double salarioBase, horaAtividade, descansoSemanalRemunerado, salario;
