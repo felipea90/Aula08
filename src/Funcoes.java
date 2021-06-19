@@ -1,4 +1,22 @@
-public class Funcoes {
+public class Funcoes 
+{
+	public static void salarioProfessor(int valor1, Double valor2)
+	{
+		double salarioBase, horaAtividade, descansoSemanalRemunerado, salario;
+
+		salarioBase = valor1 * 4.5 * valor2;
+
+		horaAtividade = salarioBase * 0.05;
+
+		descansoSemanalRemunerado = (salarioBase + horaAtividade) / 6;
+		
+		salario = salarioBase + horaAtividade + descansoSemanalRemunerado;
+
+		System.out.println("O salário base é R$ " + salarioBase);
+		System.out.println("Hora-atividade R$ " + horaAtividade);
+		System.out.println("DSR R$ " + descansoSemanalRemunerado);
+		System.out.println("Salário total R$ " + salario);
+	}
 
 	public static void triangulo(double lado1, double lado2, double lado3)
 	{
